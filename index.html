@@ -6,10 +6,6 @@
     <title>Programación Orientada a Objetos</title>
     <style>
         body {
-            margin: 0 auto; /* Centra el contenido horizontalmente */
-            width: 90%; /* Ajusta el ancho del contenido */
-            max-width: 800px; /* Establece un ancho máximo para el contenido */
-            text-align: justify; /* Centrar el texto */
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #f4f4f4;
@@ -21,8 +17,14 @@
         h2 {
             color: #2980b9;
         }
+        h3 {
+            color: #27ae60;
+        }
         p {
             line-height: 1.6;
+        }
+        ul {
+            margin-left: 20px;
         }
         .container {
             background-color: #fff;
@@ -35,21 +37,32 @@
 <body>
     <div class="container">
         <h1>Programación Orientada a Objetos (POO)</h1>
-        <p>La programación orientada a objetos (POO) es un paradigma de programación que utiliza "objetos" para diseñar aplicaciones y programas. Los objetos pueden contener datos, en forma de atributos o propiedades, y código, en forma de métodos o funciones. Este enfoque permite que el software sea más modular, reutilizable y fácil de mantener.</p>
+        <p>La programación orientada a objetos (POO) es un paradigma de programación que se basa en el uso de "objetos" para diseñar y estructurar aplicaciones y programas. Los objetos son entidades que combinan tanto datos (atributos) como comportamiento (métodos). Este enfoque se centra en la creación de objetos que interactúan entre sí para resolver problemas complejos, facilitando el desarrollo de software modular y reutilizable.</p>
+        <p>La POO ha sido fundamental en el desarrollo de software moderno, ya que ofrece una manera de gestionar la complejidad y crear aplicaciones más escalables y fáciles de mantener. A diferencia de la programación estructurada tradicional, donde el enfoque principal está en las funciones y el flujo de control, la POO se enfoca en la interacción entre objetos.</p>
         
         <h2>Los Cuatro Pilares de la Programación Orientada a Objetos</h2>
 
         <h3>1. Abstracción</h3>
-        <p>La abstracción consiste en simplificar la complejidad del sistema al ocultar los detalles innecesarios y resaltar las características esenciales. En otras palabras, se trata de crear una representación simplificada de un objeto real, destacando solo lo que es relevante para el contexto del programa.</p>
+        <p>La abstracción es el proceso de identificar y definir las características esenciales de un objeto, ignorando los detalles innecesarios. Esto permite a los programadores concentrarse en lo que un objeto debe hacer, en lugar de cómo lo hace. La abstracción es clave para manejar la complejidad en programas grandes, ya que facilita la comprensión y el diseño del sistema.</p>
+        <p>Por ejemplo, un objeto "Coche" puede tener atributos como "marca", "modelo" y "color", y métodos como "arrancar" y "acelerar". No es necesario saber cómo funciona el motor internamente para poder utilizar el coche.</p>
 
         <h3>2. Encapsulamiento</h3>
-        <p>El encapsulamiento se refiere a la agrupación de datos y métodos que operan sobre esos datos dentro de una misma unidad, o clase. Este concepto también implica la protección de los datos del acceso externo no autorizado, permitiendo el control sobre cómo se accede y modifica la información interna de un objeto.</p>
+        <p>El encapsulamiento es el principio que restringe el acceso directo a los datos de un objeto y solo permite su manipulación a través de métodos específicos. Esto ayuda a proteger los datos y a mantener la integridad del objeto. Al ocultar los detalles internos y exponer solo lo necesario, el encapsulamiento proporciona una capa de seguridad y evita que otras partes del código interfieran directamente con los datos internos.</p>
+        <p>Por ejemplo, en una clase "CuentaBancaria", los detalles de la cuenta (como el saldo) podrían estar encapsulados y solo ser accesibles o modificables a través de métodos como "depositar" o "retirar".</p>
 
         <h3>3. Herencia</h3>
-        <p>La herencia permite que una clase adquiera las propiedades y métodos de otra clase. Esto fomenta la reutilización del código y facilita la creación de jerarquías de clases, donde las clases hijas heredan el comportamiento y las características de las clases padre, con la posibilidad de añadir o modificar funcionalidades.</p>
+        <p>La herencia es un mecanismo que permite crear nuevas clases basadas en clases existentes. Esto fomenta la reutilización del código y facilita la creación de jerarquías de clases. Las clases derivadas (o hijas) heredan atributos y métodos de una clase base (o padre), pero también pueden añadir o sobrescribir funcionalidades específicas.</p>
+        <p>Por ejemplo, si tienes una clase base "Animal", podrías crear una clase derivada "Perro" que hereda los atributos y métodos de "Animal", pero añade comportamientos específicos, como "ladrar".</p>
+        <p>La herencia soporta la idea de especialización, donde las clases hijas extienden o modifican el comportamiento de las clases padres para crear objetos más específicos.</p>
 
         <h3>4. Polimorfismo</h3>
-        <p>El polimorfismo permite que diferentes clases puedan ser tratadas de la misma manera, aunque implementen comportamientos diferentes. Esto se logra mediante el uso de interfaces o clases base que definen métodos comunes, permitiendo que las clases derivadas implementen esos métodos de manera específica.</p>
+        <p>El polimorfismo permite que un mismo método o función tenga diferentes comportamientos según el objeto que lo utilice. En otras palabras, diferentes clases pueden implementar el mismo método de diferentes maneras. Esto facilita la flexibilidad y la extensibilidad en el diseño del software.</p>
+        <p>Existen dos tipos de polimorfismo:</p>
+        <ul>
+            <li><strong>Polimorfismo en tiempo de compilación (sobrecarga):</strong> Se refiere a la capacidad de definir múltiples métodos con el mismo nombre, pero con diferentes parámetros dentro de una clase.</li>
+            <li><strong>Polimorfismo en tiempo de ejecución (sobreescritura):</strong> Ocurre cuando una clase derivada implementa un método de la clase base con su propia versión.</li>
+        </ul>
+        <p>Por ejemplo, una función "dibujar()" podría comportarse de manera diferente dependiendo de si se está llamando en un objeto de la clase "Círculo" o de la clase "Cuadrado". Ambos objetos tienen el método "dibujar()", pero cada uno lo implementa de manera diferente.</p>
     </div>
 </body>
 </html>
