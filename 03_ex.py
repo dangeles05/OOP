@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter import ttk
+from tkinter import ttk             #Main
 
 def mensaje(*args):
     message.set("El botón fue presionado")
