@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe UML Diagram</title>
+</head>
+<body>
+    <h1>UML Diagram for TicTacToe Class</h1>
+    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Class Box -->
+        <rect x="10" y="10" width="280" height="200" fill="#f5f5f5" stroke="#000" stroke-width="2"/>
+        <text x="20" y="40" font-family="Arial" font-size="16" font-weight="bold">TicTacToe</text>
+        
+        <!-- Attributes -->
+        <text x="20" y="70" font-family="Arial" font-size="14">- root: tk.Tk</text>
+        <text x="20" y="90" font-family="Arial" font-size="14">- current_player: str</text>
+        <text x="20" y="110" font-family="Arial" font-size="14">- move_count: int</text>
+        <text x="20" y="130" font-family="Arial" font-size="14">- buttons: list</text>
+        <text x="20" y="150" font-family="Arial" font-size="14">- contadorx: int</text>
+        <text x="20" y="170" font-family="Arial" font-size="14">- contadory: int</text>
+        
+        <!-- Methods -->
+        <text x="20" y="200" font-family="Arial" font-size="14" font-weight="bold">+ __init__(root: tk.Tk)</text>
+        <text x="20" y="220" font-family="Arial" font-size="14">+ toggle_player()</text>
+        <text x="20" y="240" font-family="Arial" font-size="14">+ on_button_click(i: int, j: int)</text>
+        <text x="20" y="260" font-family="Arial" font-size="14">+ check_winner()</text>
+        <text x="20" y="280" font-family="Arial" font-size="14">+ show_winner(winner: str)</text>
+        <text x="20" y="300" font-family="Arial" font-size="14">+ reset_game()</text>
+    </svg>
+</body>
+</html>
